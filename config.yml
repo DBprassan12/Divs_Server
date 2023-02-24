@@ -190,7 +190,7 @@ params:
 
   projects:
     - title: -Velociraptor quick Deployment kit
-      color: Green
+      color: MediumSpringGreen
       date: Started 2023
       status: In progress
       link: https://github.com/DBprassan12/-Velociraptor-Deploy
@@ -225,7 +225,7 @@ params:
   misc: 
     #commandName: newcommand
     title: "Pottery addict"
-    titleColor: teal
+    titleColor: MediumSpringGreen
     content: |
               I LIKE MAKING POT AND MUGS 
    
@@ -238,6 +238,6 @@ params:
   interests: 
     #commandName: newcommand
     content: |
-              I LIKE INTEREST
+              
 
-    contentColor: green
+    contentColor: MediumSpringGreen
