@@ -5,7 +5,7 @@
 jQuery(document).ready(function($) {
     var animation = false;
     var availableCommands = ["all", "whois", 'social', 'work', 'education' ,
-                    'projects', 'extracurricular'  ,
+                    'projects', 'extracurricular' , 'interest'  ,
 
 	            {{ if .Site.Params.certifications }} 'certifications', {{ end }}
                     {{ if .Site.Params.startxLocation }} 'startx', {{ end }}
@@ -21,14 +21,14 @@ jQuery(document).ready(function($) {
     function whois () {
         term.echo ("");
         {{ with .Site.Params.whois }} 
-            term.echo ("[[b;grey;]Name:]\t\t\t{{ .name }}");
-            term.echo ("[[b;grey;]Profession:]\t\t{{ .profession }}");
-            term.echo ("[[b;grey;]Location:]\t\t{{ .location }}");
+            term.echo ("[[b;white;]Name:]\t\t\t{{ .name }}");
+            term.echo ("[[b;white;]Profession:]\t\t{{ .profession }}");
+            term.echo ("[[b;white;]Location:]\t\t{{ .location }}");
             {{ if .email }}
-                term.echo ("[[b;grey;]Email:]\t\t\t{{ .email }}");
+                term.echo ("[[b;white;]Email:]\t\t\t{{ .email }}");
             {{ end }}
             {{ if .homelink }}
-                term.echo ("[[b;grey;]Homepage:]\t\t{{ .homelink }}");
+                term.echo ("[[b;white;]Homepage:]\t\t{{ .homelink }}");
             {{ end }}
             {{ if .description }}
                 term.echo ("")
@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
       }
 
     function social () {
-        term.echo("");
+        term.echo( "\n" + "./Social" + "\n" );
         {{ if .Site.Params.hideSocialName }}
             {{ with .Site.Params.social }}
                 {{ range . }} 
@@ -59,10 +59,10 @@ jQuery(document).ready(function($) {
 
 	    
     function certifications () {
-        term.echo("");
+        term.echo( "\n" + "./Certifications" + "\n" );
         {{ with .Site.Params.certifications }}
             {{ range .}}
-                term.echo("[[b;{{ .color | default "grey" }};]{{ .certName }}]");
+                term.echo("[[b;{{ .color | default "white" }};]{{ .certName }}]");
 	    	term.echo("{{ .date }}");
                 {{ if .company }}
                     term.echo("{{ .company }}");
@@ -77,10 +77,10 @@ jQuery(document).ready(function($) {
     }
 	    
     function work () {
-        term.echo("");
+        term.echo( "\n" + "./Work Experience" + "\n" );
         {{ with .Site.Params.work }}
             {{ range .}}
-                term.echo("[[b;{{ .color | default "grey" }};]{{ .jobTitle }}]");
+                term.echo("[[b;{{ .color | default "white" }};]{{ .jobTitle }}]");
                 term.echo("{{ .company }}");
                 term.echo("{{ .location}}");
                 term.echo("{{ .date }}");
@@ -94,10 +94,11 @@ jQuery(document).ready(function($) {
 
 
     function extracurricular () {
-        term.echo("");
+        term.echo( "\n" + "./Extracurricular" + "\n" );
+
         {{ with .Site.Params.extracurricular }}
             {{ range .}}
-                term.echo("[[b;{{ .color | default "grey" }};]{{ .commitments }}]");
+                term.echo("[[b;{{ .color | default "white" }};]{{ .commitments }}]");
                 term.echo("{{ .club }}");
                 term.echo("{{ .url }}");
                 term.echo("{{ .location}}");
@@ -113,10 +114,11 @@ jQuery(document).ready(function($) {
 
 
     function education () {
-        term.echo("");
+        term.echo( "\n" + "./Education" + "\n" );
+
         {{ with .Site.Params.education }}
             {{ range . }}
-                term.echo("[[b;{{ .color | default "grey" }};]{{ .courseName }}]");
+                term.echo("[[b;{{ .color | default "white" }};]{{ .courseName }}]");
                 term.echo("{{ .institute }}");
                 term.echo("{{ .date }}");
                 {{ if .description }}
@@ -131,10 +133,11 @@ jQuery(document).ready(function($) {
 
     
     function projects () {
-        term.echo("");
+        term.echo( "\n" + "./Projects" + "\n" );
+
         {{ with .Site.Params.projects }}
             {{ range .}}
-                term.echo("[[b;{{ .color | default "grey" }};]{{ .title }}]");
+                term.echo("[[b;{{ .color | default "white" }};]{{ .title }}]");
                 term.echo("{{ .date }}")
                 term.echo("{{ .link }}")
                 term.echo("{{ .status }}")
@@ -148,20 +151,42 @@ jQuery(document).ready(function($) {
     }
 
     function misc (){
-        term.echo ("")
+        term.echo( "\n" + "./Misc" + "\n" );
         term.echo("[[b;{{ .Site.Params.misc.titleColor }};]{{ .Site.Params.misc.title }}]" + "\n")
         term.echo ("[[;{{.Site.Params.misc.contentColor }};]{{ .Site.Params.misc.content }}]")
         term.echo ("")
     }
+
+
+
+    function interest (){
+        term.echo( "\n" + "./Interests " + "\n" );
+
+        term.echo ("[[;{{.Site.Params.misc.contentColor }};]{{ .Site.Params.misc.content }}]")
+        term.echo ("")
+    }
+
 
     function help () {
         term.echo("\n[[b;white;]Available commands:]\n" +
                   "\n" + availableCommands.join(' ')+ '\n') 
     }
 
+
+
+
+
+
       function source() {
           term.echo(" meme here ");
       }
+
+
+
+
+
+
+
 
     //Funciton used by StartX to draw the progressBar
     function progress(percent, width) {
@@ -178,6 +203,10 @@ jQuery(document).ready(function($) {
         }
         return '[' + taken + left + '] ' + percent + '%';
     }
+
+
+
+
 
     function loading () {
         var i = 0, size = 30;
@@ -196,6 +225,8 @@ jQuery(document).ready(function($) {
             }
         })();
     }
+
+
 
 
       /* Functions End */
@@ -219,6 +250,9 @@ jQuery(document).ready(function($) {
             case 'projects':
                 projects();
                 break;
+            case 'interest':
+                interest();
+                break;
 	    case 'certifications':
                 certifications();
                 break;
@@ -236,6 +270,7 @@ jQuery(document).ready(function($) {
                 certifications();
                 extracurricular();
                 projects();
+                interest();
                 {{ if .Site.Params.misc }}
                     misc();
                 {{ end }}
@@ -267,7 +302,7 @@ jQuery(document).ready(function($) {
                           "please type 'help' for a list of available commands\n");
         }
     }, {
-        prompt: '[[;{{ .Site.Params.promptColor | default "grey" }};]{{ .Site.Params.prompt }}][[;{{ .Site.Params.promptSimbolsColor | default "grey" }};]{{.Site.Params.promptSimbols | default ":~$"}}]' + " ",
+        prompt: '[[;{{ .Site.Params.promptColor | default "white" }};]{{ .Site.Params.prompt }}][[;{{ .Site.Params.promptSimbolsColor | default "white" }};]{{.Site.Params.promptSimbols | default ":~$"}}]' + " ",
         greetings: "[[b;{{ .Site.Params.greetingColor | default "MediumSpringGreen" }};]{{ .Site.Params.greeting }}]",
         keydown: function(e, term) {
             if (animation) {

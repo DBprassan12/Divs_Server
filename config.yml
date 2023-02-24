@@ -231,3 +231,13 @@ params:
    
 
     contentColor: white
+
+
+
+
+  interests: 
+    #commandName: newcommand
+    content: |
+              I LIKE INTEREST
+
+    contentColor: green
