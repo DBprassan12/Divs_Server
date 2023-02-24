@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.110.0">
+            <meta charset="utf-8" />
+    <title>The janitor&#39;s closet </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="div">
+    <meta property="og:title" content="The janitor&#39;s closet" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="example.com" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="example.com/" />    <link rel="apple-touch-icon" sizes="180x180" href="/example.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/example.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/example.com/favicon-16x16.png">
+    <link rel="manifest" href="/example.com/site.webmanifest">
+    <link rel="mask-icon" href="/example.com/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/example.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/js/jquery.terminal.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.2/css/jquery.terminal.min.css" rel="stylesheet"/>
+
+    <style>
+        body {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+    
+    </head>
+        <body>
+        
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+    var availableCommands = ["all", "whois", 'social', 'work', 'education' ,
+                    'projects', 'extracurricular'  ,
+
+	             'certifications', 
+                     'startx', 
+                    
+                     'exit', 
+                    "misc",
+                    
+                    ] 
+
+    $('body').terminal(function(command, term) {
+
+     
+    function whois () {
+        term.echo ("");
+         
+            term.echo ("[[b;grey;]Name:]\t\t\tDiv B");
+            term.echo ("[[b;grey;]Profession:]\t\tUnknown");
+            term.echo ("[[b;grey;]Location:]\t\tPerth");
+            
+                term.echo ("[[b;grey;]Email:]\t\t\tcontact-divB@proton.me");
+            
+            
+                term.echo ("[[b;grey;]Homepage:]\t\texample.com");
+            
+            
+                term.echo ("")
+                term.echo ("\nHi, my name is \u003c\/Div\u003e, and I am currently studying at The University of Western Australia.\nI like digital forensics, le memez, socioeconomic and political issues issues. \n")
+            
+        
+        term.echo ("");
+      }
+
+    function social () {
+        term.echo("");
+        
+            
+                
+                    term.echo("github:" + "          https:\/\/github.com\/DBprassan12");
+                
+                    term.echo("linkedin:" + "        https:\/\/www.linkedin.com\/in\/div-b-cybersec");
+                
+                    term.echo("spotify:" + "         https:\/\/open.spotify.com\/user\/chwnrox0jg47zoaouq6nj6iu8");
+                
+            
+        
+        term.echo("")
+    }
+
+
+	    
+    function certifications () {
+        term.echo("");
+        
+            
+                term.echo("[[b;grey;]FOR500 Windows Forensic Analysis]");
+	    	term.echo("2022");
+                
+                    term.echo("SANS Institute");
+                
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]Siemplify Certified SOAR Analyst]");
+	    	term.echo("2020");
+                
+                    term.echo("Siemplify");
+                
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]Siemplify Platform Fundamentals]");
+	    	term.echo("2020");
+                
+                    term.echo("Siemplify");
+                
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;grey;]CB Defence Associate Analyst]");
+	    	term.echo("2019");
+                
+                    term.echo("VMware Carbon BlackVMware Carbon Black");
+                
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+	    
+    function work () {
+        term.echo("");
+        
+            
+                term.echo("[[b;Lavender;]Incident Response Intern]");
+                term.echo("Australian Public Service [REDACTED] ");
+                term.echo("Perth AU");
+                term.echo("November 2021 - February 2023");
+                term.echo ("");
+                term.echo ("\nResponsibilities\n\n- Assist in monitoring and detecting security incidents\n- Support the Incident Response team in analyzing and investigating security incidents to determine the cause, scope, and impact of the incident\n- Help develop and implement security measures to protect APS systems and data\n- Contribute to risk assessments to identify vulnerabilities and recommend security improvements\n- Assist in containing, eradicating, and recovering from security incidents\n- Participate in security training to develop your knowledge and skills\n- Stay up-to-date with the latest security technologies, trends, and threats\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Cyber Security Analyst]");
+                term.echo("Slipstream Cyber");
+                term.echo("Perth Australia");
+                term.echo("March 2019 - May 2021");
+                term.echo ("");
+                term.echo ("\nResponsibilities\n\n- Monitor security systems and networks to identify security threats and incidents\n- Investigate security incidents to determine the cause, scope, and impact of the incident\n- Develop and implement security measures to protect the organization\u0027s systems and data\n- Conduct risk assessments to identify vulnerabilities and recommend security improvements\n- Respond to security incidents by containing, eradicating, and recovering from the incident\n- Provide security guidance and training to other personnel in the organization\n- Stay up-to-date with the latest security technologies, trends, and threats\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+
+    function extracurricular () {
+        term.echo("");
+        
+            
+                term.echo("[[b;Lavender;]Perth Socialware organizer \u0026 CTF player]");
+                term.echo("Emu Exploit");
+                term.echo("https:\/\/emu.team");
+                term.echo("Perth Australia");
+                term.echo("may 2022 - present");
+                term.echo ("");
+                term.echo ("Emu Exploit, formerly PissedEmu, is Australia’s top Competitive Hacking team. Based in Perth WA, \nthe team has 2 years experience capturing flags (Founded 2021).\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;](OCM) - coders for causes]");
+                term.echo("coders for causes");
+                term.echo("https:\/\/codersforcauses.org\/");
+                term.echo("Perth Australia");
+                term.echo("March 2021 - March 2022");
+                term.echo ("");
+                term.echo ("Coders for Causes are a group of developers that empower charities and non-profit organisations by providing them solutions to their technical problems. \nWe are student powered and all of our members are volunteers dedicated to providing you the best results.\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Vice President- UWA information Security Society]");
+                term.echo("UWA information Security Society");
+                term.echo("https:\/\/au.linkedin.com\/company\/uwa-information-security-society");
+                term.echo("Perth Australia");
+                term.echo("Oct 2021- Present");
+                term.echo ("");
+                term.echo ("UWA Information Security Society is a student club located at the University Of Western Australia that aims to promote Cyber Security legally and ethically. \nOur goal is to foster the next generation of information security professionals by creating and participating in capture the flag (CTF) events and information security research.\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Tech and Ops Lead - UWA Venture Student Innovation Centre]");
+                term.echo("UWA Venture Student Innovation Centre");
+                term.echo("https:\/\/www.venture-student-innovation.com");
+                term.echo("Perth Australia");
+                term.echo("2021- Present");
+                term.echo ("");
+                term.echo ("Venture is a student led organisation creating opportunities for students to develop enterprise and innovation skills,\nbuild capability and grow networks. \nWe believe this is the key to future-proofing careers, resilient to the rapidly changing economy. \n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+
+
+    function education () {
+        term.echo("");
+        
+            
+                term.echo("[[b;Lavender;]Bachelor of Science - BS-  Major in Cyber security]");
+                term.echo("The University of Western Australia");
+                term.echo("2021- 2022");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Advance Diploma of Cyber Security]");
+                term.echo("South Metropolitan TAFE ( Murdoch)");
+                term.echo("2019- 2020");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Cert IV in Information Technology Networking]");
+                term.echo("South Metropolitan TAFE ( Murdoch)");
+                term.echo("2018- 2019");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Cert IV in Cybersecurity]");
+                term.echo("South Metropolitan TAFE ( Murdoch)");
+                term.echo("2018- 2018");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
+    }
+
+
+    
+    function projects () {
+        term.echo("");
+        
+            
+                term.echo("[[b;Green;]-Velociraptor quick Deployment kit]");
+                term.echo("Started 2023")
+                term.echo("https:\/\/github.com\/DBprassan12\/-Velociraptor-Deploy")
+                term.echo("In progress")
+                
+                    term.echo("Velociraptor advanced digital forensic and response tool quick deployment kit\n");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+        
+    }
+
+    function misc (){
+        term.echo ("")
+        term.echo("[[b;teal;]Pottery addict]" + "\n")
+        term.echo ("[[;white;]I LIKE MAKING POT AND MUGS \n]")
+        term.echo ("")
+    }
+
+    function help () {
+        term.echo("\n[[b;white;]Available commands:]\n" +
+                  "\n" + availableCommands.join(' ')+ '\n') 
+    }
+
+      function source() {
+          term.echo(" meme here ");
+      }
+
+    
+    function progress(percent, width) {
+        var size = Math.round(width*percent/100);
+        var left = '', taken = '', i;
+        for (i=size; i--;) {
+            taken += '=';
+        }
+        if (taken.length > 0) {
+            taken = taken.replace(/=$/, '>');
+        }
+        for (i=width-size; i--;) {
+            left += ' ';
+        }
+        return '[' + taken + left + '] ' + percent + '%';
+    }
+
+    function loading () {
+        var i = 0, size = 30;
+        prompt = term.get_prompt();
+        string = progress(0, size);
+        term.set_prompt(progress);
+        animation = true;
+        (function loop() {
+            string = progress(i++, size);
+            term.set_prompt(string);
+            if (i < 100) {
+                timer = setTimeout(loop, 10);
+            } else {
+                term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                animation = false
+            }
+        })();
+    }
+
+
+       
+        commands = command.split(/[ ]+/);
+        switch(commands[0]) {
+            case 'whois':
+                whois();
+                break;
+            case 'social':
+                social();
+                break;
+            case 'work':
+                work();
+                break;
+            case 'extracurricular':
+                extracurricular();
+                break;
+            case 'education':
+                education();
+                break;
+            case 'projects':
+                projects();
+                break;
+	    case 'certifications':
+                certifications();
+                break;
+            case 'misc':
+                misc();
+                break;
+            case 'help':
+                help();
+                break;
+            case 'all':
+                whois();
+                social();
+                work();
+                education();
+                certifications();
+                extracurricular();
+                projects();
+                
+                    misc();
+                
+                
+                
+                break;
+            
+            case 'startx':
+                term.echo("loading ...")
+                loading();
+                setTimeout(function(){window.location = "https:\/\/www.youtube.com\/watch?v=dQw4w9WgXcQ"}, 2000);
+                break;
+            
+            case ':(){:|:&};:':
+            case 'source':
+                source();
+                break;
+            
+            case 'exit':
+                term.echo("terminating ... ")
+                loading();
+                setTimeout(function(){window.location = 'https:\/\/emu.team\/'}, 2000);
+                break;
+            
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;Lavender;]Div@topsecretserver][[;green;]:~$]' + " ",
+        greetings: "[[b;white;]\nWelcome to the janitor\u0027s closet\n\n\n888           ,e,                 ,e,   d8                    \n888  ,e e,     \u0022   ,\u0022Y88b 888 8e   \u0022    88    e88 88e  888,8, \n888 d88 88b   888 \u00228\u0022 888 888 88b 888 d88888 d888 888b 888 \u0022  \n888 888   ,   888 ,ee 888 888 888 888  888   Y888 888P 888    \n888  \u0022YeeP\u0022   888 \u002288 888 888 888 888  888    \u002288 88\u0022  888    \n              88P                                             \n              8\u0022                                              \n\n                                                                \nType \u0027help\u0027 for a list of available commands\n]",
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: true,
+        completion: availableCommands
+        
+    });
+});
+</script>
+
+        </body>
+</html>

@@ -1,0 +1,223 @@
+## Example Config file
+BaseURL: "example.com"
+theme: "terminalcv"
+title: "The janitor's closet"
+
+params:
+  description: "div"
+  prompt: "Div@topsecretserver"
+  promptColor: Lavender
+  promptSimbols: ":~$"
+  promptSimbolsColor: green
+  startxLocation: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+# hideSocialName: true
+  exitLocation:  https://emu.team/
+  hidesource: true
+
+  greeting: | 
+  
+    Welcome to the janitor's closet
+
+
+    888           ,e,                 ,e,   d8                    
+    888  ,e e,     "   ,"Y88b 888 8e   "    88    e88 88e  888,8, 
+    888 d88 88b   888 "8" 888 888 88b 888 d88888 d888 888b 888 "  
+    888 888   ,   888 ,ee 888 888 888 888  888   Y888 888P 888    
+    888  "YeeP"   888 "88 888 888 888 888  888    "88 88"  888    
+                  88P                                             
+                  8"                                              
+
+                                                                    
+    Type 'help' for a list of available commands
+
+
+  whois: 
+      name: "Div B"
+      profession: "Unknown"
+      location: "Perth"
+      email: "contact-divB@proton.me"
+      homelink: "example.com"
+      description: |
+
+              Hi, my name is </Div>, and I am currently studying at The University of Western Australia.
+              I like digital forensics, le memez, socioeconomic and political issues issues. 
+
+
+
+
+  social:
+    ## IF you want to keep them aligned just add spaces
+    
+    - name: "github"
+      url: "          https://github.com/DBprassan12"
+    - name: "linkedin"
+      url: "        https://www.linkedin.com/in/div-b-cybersec"
+    - name: "spotify"
+      url: "         https://open.spotify.com/user/chwnrox0jg47zoaouq6nj6iu8"
+
+
+
+
+  work:
+
+    - jobTitle: Incident Response Intern 
+      color: Lavender
+      company: 'Australian Public Service [REDACTED] ' 
+      location: Perth AU
+      date: November 2021 - February 2023
+      description: | 
+
+              Responsibilities
+
+              - Assist in monitoring and detecting security incidents
+              - Support the Incident Response team in analyzing and investigating security incidents to determine the cause, scope, and impact of the incident
+              - Help develop and implement security measures to protect APS systems and data
+              - Contribute to risk assessments to identify vulnerabilities and recommend security improvements
+              - Assist in containing, eradicating, and recovering from security incidents
+              - Participate in security training to develop your knowledge and skills
+              - Stay up-to-date with the latest security technologies, trends, and threats
+
+
+    - jobTitle: Cyber Security Analyst
+      color: Lavender
+      company: 'Slipstream Cyber' 
+      location: Perth Australia 
+      date: March 2019 - May 2021
+      description: |
+
+            Responsibilities
+
+            - Monitor security systems and networks to identify security threats and incidents
+            - Investigate security incidents to determine the cause, scope, and impact of the incident
+            - Develop and implement security measures to protect the organization's systems and data
+            - Conduct risk assessments to identify vulnerabilities and recommend security improvements
+            - Respond to security incidents by containing, eradicating, and recovering from the incident
+            - Provide security guidance and training to other personnel in the organization
+            - Stay up-to-date with the latest security technologies, trends, and threats
+
+
+
+  extracurricular:
+
+
+    - commitments :  Perth Socialware organizer & CTF player
+      color: Lavender
+      club: 'Emu Exploit' 
+      url: https://emu.team
+      location: Perth Australia 
+      date:  may 2022 - present
+      description: |
+          Emu Exploit, formerly PissedEmu, is Australia’s top Competitive Hacking team. Based in Perth WA, 
+          the team has 2 years experience capturing flags (Founded 2021).
+
+
+    - commitments :  (OCM) - coders for causes
+      color: Lavender
+      club: 'coders for causes' 
+      url: https://codersforcauses.org/
+      location: Perth Australia 
+      date: March 2021 - March 2022
+      description: |
+        Coders for Causes are a group of developers that empower charities and non-profit organisations by providing them solutions to their technical problems. 
+        We are student powered and all of our members are volunteers dedicated to providing you the best results.
+
+
+    - commitments : Vice President- UWA information Security Society 
+      color: Lavender
+      club: 'UWA information Security Society' 
+      url: https://au.linkedin.com/company/uwa-information-security-society 
+      location: Perth Australia 
+      date: Oct 2021- Present 
+      description: |
+          UWA Information Security Society is a student club located at the University Of Western Australia that aims to promote Cyber Security legally and ethically. 
+          Our goal is to foster the next generation of information security professionals by creating and participating in capture the flag (CTF) events and information security research.
+
+
+
+    - commitments : Tech and Ops Lead - UWA Venture Student Innovation Centre
+      color: Lavender
+      club: 'UWA Venture Student Innovation Centre' 
+      url: https://www.venture-student-innovation.com
+      location: Perth Australia 
+      date: 2021- Present 
+      description: |
+          Venture is a student led organisation creating opportunities for students to develop enterprise and innovation skills,
+          build capability and grow networks. 
+          We believe this is the key to future-proofing careers, resilient to the rapidly changing economy. 
+
+
+
+  education:
+
+   - courseName: Bachelor of Science - BS-  Major in Cyber security 
+     color: Lavender
+     institute: The University of Western Australia
+     date: 2021- 2022
+     description: |
+
+
+   - courseName: Advance Diploma of Cyber Security
+     color: Lavender
+     institute: South Metropolitan TAFE ( Murdoch)
+     date: 2019- 2020
+     description: |
+
+
+   - courseName: Cert IV in Information Technology Networking
+     color: Lavender
+     institute: South Metropolitan TAFE ( Murdoch)
+     date: 2018- 2019
+     description: |
+
+
+   - courseName: Cert IV in Cybersecurity
+     color: Lavender
+     institute: South Metropolitan TAFE ( Murdoch)
+     date: 2018- 2018
+     description: |
+
+
+
+  projects:
+    - title: -Velociraptor quick Deployment kit
+      color: Green
+      date: Started 2023
+      status: In progress
+      link: https://github.com/DBprassan12/-Velociraptor-Deploy
+
+      description: |
+            Velociraptor advanced digital forensic and response tool quick deployment kit
+
+  
+
+
+
+  certifications:
+
+  - certName: FOR500 Windows Forensic Analysis 
+    company: 'SANS Institute'
+    date: 2022
+
+  - certName: Siemplify Certified SOAR Analyst 
+    company: Siemplify
+    date: 2020
+
+  - certName: Siemplify Platform Fundamentals
+    company: Siemplify
+    date: 2020
+
+  - certName: CB Defence Associate Analyst
+    company: VMware Carbon BlackVMware Carbon Black 
+    date: 2019
+  
+
+
+  misc: 
+    #commandName: newcommand
+    title: "Pottery addict"
+    titleColor: teal
+    content: |
+              I LIKE MAKING POT AND MUGS 
+   
+
+    contentColor: white
