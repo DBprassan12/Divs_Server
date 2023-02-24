@@ -268,7 +268,7 @@ jQuery(document).ready(function($) {
         }
     }, {
         prompt: '[[;{{ .Site.Params.promptColor | default "grey" }};]{{ .Site.Params.prompt }}][[;{{ .Site.Params.promptSimbolsColor | default "grey" }};]{{.Site.Params.promptSimbols | default ":~$"}}]' + " ",
-        greetings: "[[b;{{ .Site.Params.greetingColor | default "white" }};]{{ .Site.Params.greeting }}]",
+        greetings: "[[b;{{ .Site.Params.greetingColor | default "MediumSpringGreen" }};]{{ .Site.Params.greeting }}]",
         keydown: function(e, term) {
             if (animation) {
                 if (e.which == 68 && e.ctrlKey) { // CTRL+D
