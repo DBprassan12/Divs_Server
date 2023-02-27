@@ -44,7 +44,7 @@ params:
       profession: "Unknown"
       location: "Perth"
       email: "contact-divB@proton.me"
-      homelink: "example.com"
+      homelink: "https://divsforensics.com"
       description: |
 
               Hi, my name is </Div>, and I am currently studying at The University of Western Australia.
