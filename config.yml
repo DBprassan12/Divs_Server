@@ -16,6 +16,7 @@ params:
 
   greeting: | 
   
+
     Welcome to the janitor's closet
 
             ;                                                                                                            
@@ -52,7 +53,6 @@ params:
 
 
 
-
   social:
     ## IF you want to keep them aligned just add spaces
 
@@ -61,16 +61,33 @@ params:
     - name: "github"
       url: "          https://github.com/DBprassan12"
     - name: "linkedin"
-      url: "        https://www.linkedin.com/in/div-b-cybersec"
-    - name: "spotify"
-      url: "         https://open.spotify.com/user/chwnrox0jg47zoaouq6nj6iu8"
+      url: "        https://www.linkedin.com/in/div-cyber"
+
 
 
 
 
   work:
 
-    - jobTitle: Incident Response Intern 
+    - jobTitle: Cybersecurity Engineer (Internship) 
+      color: Lavender
+      company: 'Wesfarmers Chemicals, Energy & Fertilisers ' 
+      location: Perth AU
+      date: November 2023 - February 2024
+      description: | 
+
+              Responsibilities
+              
+              - Collaborate with stakeholders to understand security needs.
+              - Ensure effective integration of security measures into the existing infrastructure.
+              - Set up systems for real-time web traffic monitoring.
+              - Track IP addresses, data packets, and user behavior.
+              - Detect patterns that deviate from the norm, indicating potential threats.
+              - Keep detailed logs of web traffic.
+              - Collect and analyze data from various sources and audit file systems.
+
+
+    - jobTitle: Digital Forensics and Incident Response Analyst (Internship) 
       color: Lavender
       company: 'Australian Public Service [REDACTED] ' 
       location: Perth AU
@@ -80,7 +97,8 @@ params:
               Responsibilities
 
               - Assist in monitoring and detecting security incidents
-              - Support the Incident Response team in analyzing and investigating security incidents to determine the cause, scope, and impact of the incident
+              - Support the Incident Response team in analyzing and investigating security incidents to determine
+               the cause, scope, and impact of the incident
               - Help develop and implement security measures to protect APS systems and data
               - Contribute to risk assessments to identify vulnerabilities and recommend security improvements
               - Assist in containing, eradicating, and recovering from security incidents
@@ -110,15 +128,16 @@ params:
   extracurricular:
 
 
-    - commitments :  Perth Socialware organizer & CTF player
+    - commitments : ACSS Delegate
       color: Lavender
-      club: 'Emu Exploit' 
-      url: https://emu.team
-      location: Perth Australia 
-      date:  may 2022 - present
+      club: 'Australian Crisis Simulation Summit' 
+      url: https://australiancrisissimulationsummit.com/
+      location: Canberra Australia 
+      date: September 2023
       description: |
-          Emu Exploit, formerly PissedEmu, is Australia’s top Competitive Hacking team. Based in Perth WA, 
-          the team has 2 years experience capturing flags (Founded 2021).
+        The Australian Crisis Simulation Summit (ACSS) at ANU is a student-run volunteer organization. 
+        It focuses on complex future-based crisis simulations to develop future national security leaders. 
+        ACSS embraces a multidisciplinary approach, involving diverse voices and participants from non-security fields.
 
 
     - commitments :  (OCM) - coders for causes
@@ -126,22 +145,11 @@ params:
       club: 'coders for causes' 
       url: https://codersforcauses.org/
       location: Perth Australia 
-      date: March 2021 - March 2022
+      date: March 2021/2022  & 2023/2024
       description: |
-        Coders for Causes are a group of developers that empower charities and non-profit organisations by providing them solutions to their technical problems. 
+        Coders for Causes are a group of developers that empower charities and non-profit organisations 
+        by providing them solutions to their technical problems. 
         We are student powered and all of our members are volunteers dedicated to providing you the best results.
-
-
-    - commitments : Vice President- UWA information Security Society 
-      color: Lavender
-      club: 'UWA information Security Society' 
-      url: https://au.linkedin.com/company/uwa-information-security-society 
-      location: Perth Australia 
-      date: Oct 2021- Present 
-      description: |
-          UWA Information Security Society is a student club located at the University Of Western Australia that aims to promote Cyber Security legally and ethically. 
-          Our goal is to foster the next generation of information security professionals by creating and participating in capture the flag (CTF) events and information security research.
-
 
 
     - commitments : Tech and Ops Lead - UWA Venture Student Innovation Centre
@@ -151,18 +159,48 @@ params:
       location: Perth Australia 
       date: 2021- Present 
       description: |
-          Venture is a student led organisation creating opportunities for students to develop enterprise and innovation skills,
-          build capability and grow networks. 
+          Venture is a student led organisation creating opportunities for students to develop enterprise 
+          and innovation skills, build capability and grow networks. 
           We believe this is the key to future-proofing careers, resilient to the rapidly changing economy. 
+
+
+    - commitments :  Perth Socialware organizer & CTF player
+      color: Lavender
+      club: 'Emu Exploit' 
+      url: https://emu.team
+      location: Perth Australia 
+      date:  may 2022 - 2024
+      description: |
+          Emu Exploit, formerly PissedEmu, is Australia’s top Competitive Hacking team. Based in Perth WA, 
+          the team has 2 years experience capturing flags (Founded 2021).
+
+
+    - commitments : Vice President- UWA information Security Society 
+      color: Lavender
+      club: 'UWA information Security Society' 
+      url: https://au.linkedin.com/company/uwa-information-security-society 
+      location: Perth Australia 
+      date: Oct 2021- Present 
+      description: |
+          UWA Information Security Society is a student club located at the University Of Western Australia 
+          that aims to promote Cyber Security legally and ethically. 
+          Our goal is to foster the next generation of information security professionals by creating and 
+          participating in capture the flag (CTF) events and information security research.
 
 
 
   education:
 
-   - courseName: Bachelor of Science - BS-  Major in Cyber security 
+   - courseName: Bachelor of Arts - Major in Political Science and International Relations
      color: Lavender
      institute: The University of Western Australia
-     date: 2021- 2022
+     date: 2023- present
+     description: |
+
+   - courseName: Bachelor of Science - Major in Cyber security [discontinued]
+     color: Lavender
+     institute: The University of Western Australia
+     date: 2021- 2023
      description: |
 
 
@@ -189,6 +227,41 @@ params:
 
 
   projects:
+
+
+    - title: -Windows69 Chat-Bot
+      color: MediumSpringGreen
+      date: 2023
+      status: Done
+      link: https://github.com/CITS3403GroupProject/Windows69-Chatbot
+
+      description: |
+            Experience the nostalgia of Windows 98 with real-time chats and customizable AI chatbots. 
+            Discover the unique personalities of your AI companions and even chat with a modernized Clippy! 
+            This platform blends advanced AI with a vintage graphical interface to offer an immersive, 
+            memorable experience reminiscent of the late 90s.
+
+        
+    - title: -DUCTF 5 MEME
+      color: MediumSpringGreen
+      date: 2024
+      status: Done
+      link: https://dbprassan12.github.io/DUCTFMEM2.0
+
+      description: |
+            "HexBit Ransom Page , Capturing the essence of DUCTF 2024"
+
+
+    - title: -DUCTF 4 MEME (WINNER 2023)
+      color: MediumSpringGreen
+      date: 2023
+      status: Done
+      link: https://dbprassan12.github.io/DUCTF4MEME/
+
+      description: |
+            "Carefully crafted, magnificent eye for detail and true attention to audio. Capturing the essence of DUCTF 2023"
+       
+
     - title: -Velociraptor quick Deployment kit
       color: MediumSpringGreen
       date: Started 2023
@@ -203,6 +276,10 @@ params:
 
 
   certifications:
+
+  - certName: GIAC Certified Forensic Analyst (GCFA) & FOR508
+    company: 'SANS Institute & GIAC'
+    date: 2024
 
   - certName: FOR500 Windows Forensic Analysis 
     company: 'SANS Institute'
@@ -234,10 +311,3 @@ params:
 
 
 
-
-  interests: 
-    #commandName: newcommand
-    content: |
-              
-
-    contentColor: MediumSpringGreen

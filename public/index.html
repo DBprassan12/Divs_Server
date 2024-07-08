@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w2.org/1999/xhtml">
-<html lang="en">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.110.0">
+	<meta name="generator" content="Hugo 0.128.2">
             <meta charset="utf-8" />
     <title>The janitor&#39;s closet </title>
     <meta charset="utf-8">
@@ -11,14 +11,14 @@
     <meta name="description" content="div">
     <meta property="og:title" content="The janitor&#39;s closet" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="example.com" />
+    <meta property="og:url" content="//localhost:1313/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
-    <link rel="canonical" href="example.com/" />    <link rel="apple-touch-icon" sizes="180x180" href="/example.com/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/example.com/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/example.com/favicon-16x16.png">
-    <link rel="manifest" href="/example.com/site.webmanifest">
-    <link rel="mask-icon" href="/example.com/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/example.com/favicon.ico">
+    <link rel="canonical" href="//localhost:1313/" />    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="">
 
 
@@ -41,7 +41,7 @@
 jQuery(document).ready(function($) {
     var animation = false;
     var availableCommands = ["all", "whois", 'social', 'work', 'education' ,
-                    'projects', 'extracurricular'  ,
+                    'projects', 'extracurricular' ,
 
 	             'certifications', 
                      'startx', 
@@ -57,33 +57,31 @@ jQuery(document).ready(function($) {
     function whois () {
         term.echo ("");
          
-            term.echo ("[[b;grey;]Name:]\t\t\tDiv B");
-            term.echo ("[[b;grey;]Profession:]\t\tUnknown");
-            term.echo ("[[b;grey;]Location:]\t\tPerth");
+            term.echo ("[[b;white;]Name:]\t\t\tDiv B");
+            term.echo ("[[b;white;]Profession:]\t\tUnknown");
+            term.echo ("[[b;white;]Location:]\t\tPerth");
             
-                term.echo ("[[b;grey;]Email:]\t\t\tcontact-divB@proton.me");
+                term.echo ("[[b;white;]Email:]\t\t\tcontact-divB@proton.me");
             
             
-                term.echo ("[[b;grey;]Homepage:]\t\texample.com");
+                term.echo ("[[b;white;]Homepage:]\t\thttps:\/\/divsforensics.com");
             
             
                 term.echo ("")
-                term.echo ("\nHi, my name is \u003c\/Div\u003e, and I am currently studying at The University of Western Australia.\nI like digital forensics, le memez, socioeconomic and political issues issues. \n")
+                term.echo ("\nHi, my name is \u003c\/Div\u003e, and I am currently studying at The University of Western Australia.\nI like digital forensics, le memez, socioeconomic and political issues. \n")
             
         
         term.echo ("");
       }
 
     function social () {
-        term.echo("");
+        term.echo( " \n" + "./Social" + "\n" );
         
             
                 
                     term.echo("github:" + "          https:\/\/github.com\/DBprassan12");
                 
-                    term.echo("linkedin:" + "        https:\/\/www.linkedin.com\/in\/div-b-cybersec");
-                
-                    term.echo("spotify:" + "         https:\/\/open.spotify.com\/user\/chwnrox0jg47zoaouq6nj6iu8");
+                    term.echo("linkedin:" + "        https:\/\/www.linkedin.com\/in\/div-cyber");
                 
             
         
@@ -93,10 +91,19 @@ jQuery(document).ready(function($) {
 
 	    
     function certifications () {
-        term.echo("");
+        term.echo( "\n" + "./Certifications" + "\n" );
         
             
-                term.echo("[[b;grey;]FOR500 Windows Forensic Analysis]");
+                term.echo("[[b;white;]GIAC Certified Forensic Analyst (GCFA) \u0026 FOR508]");
+	    	term.echo("2024");
+                
+                    term.echo("SANS Institute \u0026 GIAC");
+                
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;white;]FOR500 Windows Forensic Analysis]");
 	    	term.echo("2022");
                 
                     term.echo("SANS Institute");
@@ -105,7 +112,7 @@ jQuery(document).ready(function($) {
                 term.echo("-------------------- ");
                 term.echo("");
             
-                term.echo("[[b;grey;]Siemplify Certified SOAR Analyst]");
+                term.echo("[[b;white;]Siemplify Certified SOAR Analyst]");
 	    	term.echo("2020");
                 
                     term.echo("Siemplify");
@@ -114,7 +121,7 @@ jQuery(document).ready(function($) {
                 term.echo("-------------------- ");
                 term.echo("");
             
-                term.echo("[[b;grey;]Siemplify Platform Fundamentals]");
+                term.echo("[[b;white;]Siemplify Platform Fundamentals]");
 	    	term.echo("2020");
                 
                     term.echo("Siemplify");
@@ -123,7 +130,7 @@ jQuery(document).ready(function($) {
                 term.echo("-------------------- ");
                 term.echo("");
             
-                term.echo("[[b;grey;]CB Defence Associate Analyst]");
+                term.echo("[[b;white;]CB Defence Associate Analyst]");
 	    	term.echo("2019");
                 
                     term.echo("VMware Carbon BlackVMware Carbon Black");
@@ -136,15 +143,24 @@ jQuery(document).ready(function($) {
     }
 	    
     function work () {
-        term.echo("");
+        term.echo( "\n" + "./Work Experience" + "\n" );
         
             
-                term.echo("[[b;Lavender;]Incident Response Intern]");
+                term.echo("[[b;Lavender;]Cybersecurity Engineer (Internship)]");
+                term.echo("Wesfarmers Chemicals, Energy \u0026 Fertilisers ");
+                term.echo("Perth AU");
+                term.echo("November 2023 - February 2024");
+                term.echo ("");
+                term.echo ("\nResponsibilities\n\n- Collaborate with stakeholders to understand security needs.\n- Ensure effective integration of security measures into the existing infrastructure.\n- Set up systems for real-time web traffic monitoring.\n- Track IP addresses, data packets, and user behavior.\n- Detect patterns that deviate from the norm, indicating potential threats.\n- Keep detailed logs of web traffic.\n- Collect and analyze data from various sources and audit file systems.\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Digital Forensics and Incident Response Analyst (Internship)]");
                 term.echo("Australian Public Service [REDACTED] ");
                 term.echo("Perth AU");
                 term.echo("November 2021 - February 2023");
                 term.echo ("");
-                term.echo ("\nResponsibilities\n\n- Assist in monitoring and detecting security incidents\n- Support the Incident Response team in analyzing and investigating security incidents to determine the cause, scope, and impact of the incident\n- Help develop and implement security measures to protect APS systems and data\n- Contribute to risk assessments to identify vulnerabilities and recommend security improvements\n- Assist in containing, eradicating, and recovering from security incidents\n- Participate in security training to develop your knowledge and skills\n- Stay up-to-date with the latest security technologies, trends, and threats\n")
+                term.echo ("\nResponsibilities\n\n- Assist in monitoring and detecting security incidents\n- Support the Incident Response team in analyzing and investigating security incidents to determine\n the cause, scope, and impact of the incident\n- Help develop and implement security measures to protect APS systems and data\n- Contribute to risk assessments to identify vulnerabilities and recommend security improvements\n- Assist in containing, eradicating, and recovering from security incidents\n- Participate in security training to develop your knowledge and skills\n- Stay up-to-date with the latest security technologies, trends, and threats\n")
                 term.echo("-------------------- ");
                 term.echo("");
             
@@ -162,16 +178,17 @@ jQuery(document).ready(function($) {
 
 
     function extracurricular () {
-        term.echo("");
+        term.echo( "\n" + "./Extracurricular" + "\n" );
+
         
             
-                term.echo("[[b;Lavender;]Perth Socialware organizer \u0026 CTF player]");
-                term.echo("Emu Exploit");
-                term.echo("https:\/\/emu.team");
-                term.echo("Perth Australia");
-                term.echo("may 2022 - present");
+                term.echo("[[b;Lavender;]ACSS Delegate]");
+                term.echo("Australian Crisis Simulation Summit");
+                term.echo("https:\/\/australiancrisissimulationsummit.com\/");
+                term.echo("Canberra Australia");
+                term.echo("September 2023");
                 term.echo ("");
-                term.echo ("Emu Exploit, formerly PissedEmu, is Australia’s top Competitive Hacking team. Based in Perth WA, \nthe team has 2 years experience capturing flags (Founded 2021).\n")
+                term.echo ("The Australian Crisis Simulation Summit (ACSS) at ANU is a student-run volunteer organization. \nIt focuses on complex future-based crisis simulations to develop future national security leaders. \nACSS embraces a multidisciplinary approach, involving diverse voices and participants from non-security fields.\n")
                 term.echo("-------------------- ");
                 term.echo("");
             
@@ -179,19 +196,9 @@ jQuery(document).ready(function($) {
                 term.echo("coders for causes");
                 term.echo("https:\/\/codersforcauses.org\/");
                 term.echo("Perth Australia");
-                term.echo("March 2021 - March 2022");
+                term.echo("March 2021\/2022  \u0026 2023\/2024");
                 term.echo ("");
-                term.echo ("Coders for Causes are a group of developers that empower charities and non-profit organisations by providing them solutions to their technical problems. \nWe are student powered and all of our members are volunteers dedicated to providing you the best results.\n")
-                term.echo("-------------------- ");
-                term.echo("");
-            
-                term.echo("[[b;Lavender;]Vice President- UWA information Security Society]");
-                term.echo("UWA information Security Society");
-                term.echo("https:\/\/au.linkedin.com\/company\/uwa-information-security-society");
-                term.echo("Perth Australia");
-                term.echo("Oct 2021- Present");
-                term.echo ("");
-                term.echo ("UWA Information Security Society is a student club located at the University Of Western Australia that aims to promote Cyber Security legally and ethically. \nOur goal is to foster the next generation of information security professionals by creating and participating in capture the flag (CTF) events and information security research.\n")
+                term.echo ("Coders for Causes are a group of developers that empower charities and non-profit organisations \nby providing them solutions to their technical problems. \nWe are student powered and all of our members are volunteers dedicated to providing you the best results.\n")
                 term.echo("-------------------- ");
                 term.echo("");
             
@@ -201,7 +208,27 @@ jQuery(document).ready(function($) {
                 term.echo("Perth Australia");
                 term.echo("2021- Present");
                 term.echo ("");
-                term.echo ("Venture is a student led organisation creating opportunities for students to develop enterprise and innovation skills,\nbuild capability and grow networks. \nWe believe this is the key to future-proofing careers, resilient to the rapidly changing economy. \n")
+                term.echo ("Venture is a student led organisation creating opportunities for students to develop enterprise \nand innovation skills, build capability and grow networks. \nWe believe this is the key to future-proofing careers, resilient to the rapidly changing economy. \n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Perth Socialware organizer \u0026 CTF player]");
+                term.echo("Emu Exploit");
+                term.echo("https:\/\/emu.team");
+                term.echo("Perth Australia");
+                term.echo("may 2022 - 2024");
+                term.echo ("");
+                term.echo ("Emu Exploit, formerly PissedEmu, is Australia’s top Competitive Hacking team. Based in Perth WA, \nthe team has 2 years experience capturing flags (Founded 2021).\n")
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Vice President- UWA information Security Society]");
+                term.echo("UWA information Security Society");
+                term.echo("https:\/\/au.linkedin.com\/company\/uwa-information-security-society");
+                term.echo("Perth Australia");
+                term.echo("Oct 2021- Present");
+                term.echo ("");
+                term.echo ("UWA Information Security Society is a student club located at the University Of Western Australia \nthat aims to promote Cyber Security legally and ethically. \nOur goal is to foster the next generation of information security professionals by creating and \nparticipating in capture the flag (CTF) events and information security research.\n")
                 term.echo("-------------------- ");
                 term.echo("");
             
@@ -211,12 +238,20 @@ jQuery(document).ready(function($) {
 
 
     function education () {
-        term.echo("");
+        term.echo( "\n" + "./Education" + "\n" );
+
         
             
-                term.echo("[[b;Lavender;]Bachelor of Science - BS-  Major in Cyber security]");
+                term.echo("[[b;Lavender;]Bachelor of Arts - Major in Political Science and International Relations]");
                 term.echo("The University of Western Australia");
-                term.echo("2021- 2022");
+                term.echo("2023- present");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;Lavender;]Bachelor of Science - Major in Cyber security [discontinued]]");
+                term.echo("The University of Western Australia");
+                term.echo("2021- 2023");
                 
                 term.echo("-------------------- ");
                 term.echo("");
@@ -248,10 +283,41 @@ jQuery(document).ready(function($) {
 
     
     function projects () {
-        term.echo("");
+        term.echo( "\n" + "./Projects" + "\n" );
+
         
             
-                term.echo("[[b;Green;]-Velociraptor quick Deployment kit]");
+                term.echo("[[b;MediumSpringGreen;]-Windows69 Chat-Bot]");
+                term.echo("2023")
+                term.echo("https:\/\/github.com\/CITS3403GroupProject\/Windows69-Chatbot")
+                term.echo("Done")
+                
+                    term.echo("Experience the nostalgia of Windows 98 with real-time chats and customizable AI chatbots. \nDiscover the unique personalities of your AI companions and even chat with a modernized Clippy! \nThis platform blends advanced AI with a vintage graphical interface to offer an immersive, \nmemorable experience reminiscent of the late 90s.\n");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;MediumSpringGreen;]-DUCTF 5 MEME]");
+                term.echo("2024")
+                term.echo("https:\/\/dbprassan12.github.io\/DUCTFMEM2.0")
+                term.echo("Done")
+                
+                    term.echo("\u0022HexBit Ransom Page , Capturing the essence of DUCTF 2024\u0022\n");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;MediumSpringGreen;]-DUCTF 4 MEME (WINNER 2023)]");
+                term.echo("2023")
+                term.echo("https:\/\/dbprassan12.github.io\/DUCTF4MEME\/")
+                term.echo("Done")
+                
+                    term.echo("\u0022Carefully crafted, magnificent eye for detail and true attention to audio. Capturing the essence of DUCTF 2023\u0022\n");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;MediumSpringGreen;]-Velociraptor quick Deployment kit]");
                 term.echo("Started 2023")
                 term.echo("https:\/\/github.com\/DBprassan12\/-Velociraptor-Deploy")
                 term.echo("In progress")
@@ -265,20 +331,38 @@ jQuery(document).ready(function($) {
     }
 
     function misc (){
-        term.echo ("")
-        term.echo("[[b;teal;]Pottery addict]" + "\n")
+        term.echo( "\n" + "./Misc" + "\n" );
+        term.echo("[[b;MediumSpringGreen;]Pottery addict]" + "\n")
         term.echo ("[[;white;]I LIKE MAKING POT AND MUGS \n]")
         term.echo ("")
     }
+
+
+
+    function interest (){
+        term.echo( "\n" + "./Interests " + "\n" );
+
+        term.echo ("[[;white;]I LIKE MAKING POT AND MUGS \n]")
+        term.echo ("")
+    }
+
 
     function help () {
         term.echo("\n[[b;white;]Available commands:]\n" +
                   "\n" + availableCommands.join(' ')+ '\n') 
     }
 
+
+
+
+
+
       function source() {
           term.echo(" meme here ");
       }
+
+
+
 
     
     function progress(percent, width) {
@@ -295,6 +379,8 @@ jQuery(document).ready(function($) {
         }
         return '[' + taken + left + '] ' + percent + '%';
     }
+
+
 
     function loading () {
         var i = 0, size = 30;
@@ -313,6 +399,8 @@ jQuery(document).ready(function($) {
             }
         })();
     }
+
+
 
 
        
@@ -336,6 +424,9 @@ jQuery(document).ready(function($) {
             case 'projects':
                 projects();
                 break;
+            case 'interest':
+                interest();
+                break;
 	    case 'certifications':
                 certifications();
                 break;
@@ -353,6 +444,7 @@ jQuery(document).ready(function($) {
                 certifications();
                 extracurricular();
                 projects();
+                interest();
                 
                     misc();
                 
@@ -382,8 +474,8 @@ jQuery(document).ready(function($) {
                           "please type 'help' for a list of available commands\n");
         }
     }, {
-        prompt: '[[;Lavender;]Div@topsecretserver][[;green;]:~$]' + " ",
-        greetings: "[[b;white;]\nWelcome to the janitor\u0027s closet\n\n\n888           ,e,                 ,e,   d8                    \n888  ,e e,     \u0022   ,\u0022Y88b 888 8e   \u0022    88    e88 88e  888,8, \n888 d88 88b   888 \u00228\u0022 888 888 88b 888 d88888 d888 888b 888 \u0022  \n888 888   ,   888 ,ee 888 888 888 888  888   Y888 888P 888    \n888  \u0022YeeP\u0022   888 \u002288 888 888 888 888  888    \u002288 88\u0022  888    \n              88P                                             \n              8\u0022                                              \n\n                                                                \nType \u0027help\u0027 for a list of available commands\n]",
+        prompt: '[[;Lavender;]Div@topsecretserver][[;Lavender;]:~$]' + " ",
+        greetings: "[[b;MediumSpringGreen;]\n\nWelcome to the janitor\u0027s closet\n\n        ;                                                                                                            \n        ED.                                                                                                          \n        E#Wi                        .           .                .        ,;                            ,;           \n        E###G.       t              EK,        ;W               ;W      f#i j.                        f#i j.         \n        E#fD#W;      Ej             .j;       f#E              f#E    .E#t  EW,                     .E#t  EW,        \n        E#t t##L     E#, t      .DD.        .E#f             .E#f    i#W,   E##j       t      .DD. i#W,   E##j       \n        E#t  .E#K,   E#t EK:   ,WK.        iWW;             iWW;    L#D.    E###D.     EK:   ,WK. L#D.    E###D.     \n        E#t    j##f  E#t E#t  i#D         L##Lffi          L##Lffi:K#Wfff;  E#jG#W;    E#t  i#D :K#Wfff;  E#jG#W;    \n        E#t    :E#K: E#t E#t j#f         tLLG##L          tLLG##L i##WLLLLt E#t t##f   E#t j#f  i##WLLLLt E#t t##f   \n        E#t   t##L   E#t E#tL#i            ,W#i             ,W#i   .E#L     E#t  :K#E: E#tL#i    .E#L     E#t  :K#E: \n        E#t .D#W;    E#t E#WW,            j#E.             j#E.      f#E:   E#KDDDD###iE#WW,       f#E:   E#KDDDD###i\n        E#tiW#G.     E#t E#K:           .D#j             .D#j         ,WW;  E#f,t#Wi,,,E#K:         ,WW;  E#f,t#Wi,,,\n        E#K##i       E#t ED.           ,WK,             ,WK,           .D#; E#t  ;#W:  ED.           .D#; E#t  ;#W:  \n        E##D.        E#t t             EG.              EG.              tt DWi   ,KK: t               tt DWi   ,KK: \n        E#t          ,;.               ,                ,                                                            \n        L:                                                                                                           \n\n                                                                                                                                                                                                                                \nType \u0027help\u0027 for a list of available commands\n]",
         keydown: function(e, term) {
             if (animation) {
                 if (e.which == 68 && e.ctrlKey) { 
@@ -397,7 +489,8 @@ jQuery(document).ready(function($) {
         },
         autocompleteMenu: true,
         completion: availableCommands
-        
+	
+           
     });
 });
 </script>
